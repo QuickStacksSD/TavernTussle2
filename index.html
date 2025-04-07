@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="Loginstyle.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="login-container">
+            <div class="login-box">
+                <h1>Game SignUp</h1>
+                <div class="textbox">
+                    <input type="text" id="usernameS" placeholder="Username" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" id="passwordS" placeholder="Password" required>
+                </div>
+                <button id="SignUp" class="btn">Create New Account!</button>
+                <button id="goToLogin" class="btn">Login</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <script type="module" src="SignUp.js"></script> <!-- Use type="module" here -->
+    <script>
+        // Event listener for "Go to Login" button
+        document.getElementById('goToLogin').addEventListener('click', function () {
+            window.location.href = 'login.html'; // Redirects to login.html
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page - Tussle Game</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h2>Tussle Game</h2>
+        </div>
+        <nav>
+            <ul>
+                <li id="StoreBtn"><i class="fas fa-store"></i> Store</li>
+                <li id="globalBtn"><i class="fas fa-globe"></i> Global</li>
+                <li id="helpBtn"><i class="fas fa-question-circle"></i> Help</li>
+                <li id="tussleBtn"><i class="fas fa-fist-raised"></i> Tussle</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="profile-section">
+            <h1 id="profileUsername"></h1>
+            <p>Here, you can view and manage your personal profile details.</p>
+
+            <table id="profileTable">
+                <thead>
+                    <tr>
+                        <th>My Stats</th>
+                        <th>Value</th>
+                
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gold</td>
+                        <td id="profileGold"></td>
+                    </tr>
+                    <tr>
+                        <td>XP</td>
+                        <td id="profileXP"></td>
+                    </tr>
+                    <tr>
+                        <td>Wins</td>
+                        <td id="profileWins"></td>
+                    </tr>
+                    <tr>
+                        <td>Rank</td>
+                        <td id="profileRank"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <button id="logoutBtn">Logout</button>
+        </section>
+
+        <section class="selected-cards-section">
+            <h2>Your Deck:</h2>
+            <div class="selected-cards">
+                <div class="selected-card" id="selectedCard1"></div>
+                <div class="selected-card" id="selectedCard2"></div>
+                <div class="selected-card" id="selectedCard3"></div>
+            </div>
+        </section>
+
+        <section class="cards-section">
+            <h2>Your Cards</h2>
+            <div class="card-list" id="userCards">
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+<script>document.getElementById("StoreBtn").addEventListener("click", function () {
+        // Redirect the user to store.html when the button is clicked
+        window.location.href = "store.html";
+    });</script>
+    <script type="module" src="main.js"> </script>
+</body>
+
+</html>

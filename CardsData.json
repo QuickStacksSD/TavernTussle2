@@ -1,0 +1,125 @@
+{
+  "cards": [
+    {
+      "name": "Jerry",
+      "health": 100,
+      "attack": 20,
+      "defense": 15,
+      "cost": 50,
+      "speed": 7,
+      "luck": 5,
+      "owned": true,
+      "type": "Support"
+    },
+    {
+      "name": "King Barbus",
+      "health": 120,
+      "attack": 10,
+      "defense": 25,
+      "cost": 60,
+      "speed": 4,
+      "luck": 6,
+      "owned": true,
+      "type": "Healer"
+    },
+    {
+      "name": "Sir Booze O'Lot",
+      "health": 80,
+      "attack": 30,
+      "defense": 10,
+      "cost": 55,
+      "speed": 9,
+      "luck": 8,
+      "owned": true,
+      "type": "Attacker"
+    },
+    {
+      "name": "Ye Tweakin Jester",
+      "health": 120,
+      "attack": 10,
+      "defense": 25,
+      "cost": 60,
+      "speed": 4,
+      "luck": 6,
+      "owned": false,
+      "type": "Attacker"
+    },
+    {
+      "name": "Trohn the Tipsy",
+      "health": 120,
+      "attack": 10,
+      "defense": 25,
+      "cost": 60,
+      "speed": 4,
+      "luck": 6,
+      "owned": true,
+      "type": "Defense"
+    },
+    {
+      "name": "Lord Soberbane",
+      "health": 150,
+      "attack": 25,
+      "defense": 30,
+      "cost": 80,
+      "speed": 3,
+      "luck": 4,
+      "owned": false,
+      "type": "Defender"
+    },
+    {
+      "name": "Baron Von Hangover",
+      "health": 140,
+      "attack": 20,
+      "defense": 35,
+      "cost": 75,
+      "speed": 3,
+      "luck": 5,
+      "owned": false,
+      "type": "Defender"
+    },
+    {
+      "name": "Count Drunkenstein",
+      "health": 160,
+      "attack": 30,
+      "defense": 20,
+      "cost": 90,
+      "speed": 4,
+      "luck": 6,
+      "owned": false,
+      "type": "Attacker"
+    },
+    {
+      "name": "Princess Tippleton",
+      "health": 110,
+      "attack": 25,
+      "defense": 25,
+      "cost": 70,
+      "speed": 5,
+      "luck": 7,
+      "owned": false,
+      "type": "Support"
+    },
+    {
+      "name": "Sir Drunksalot",
+      "health": 130,
+      "attack": 20,
+      "defense": 30,
+      "cost": 80,
+      "speed": 6,
+      "luck": 4,
+      "owned": false,
+      "type": "Defender"
+    },
+    {
+      "name": "Captain Hangover",
+      "health": 140,
+      "attack": 25,
+      "defense": 25,
+      "cost": 85,
+      "speed": 5,
+      "luck": 5,
+      "owned": false,
+      "type": "Attacker"
+    }
+  ]
+}

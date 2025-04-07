@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Players</title>
+    <link rel="stylesheet" href="Players.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Select Opponent</h1>
+      
+
+        <!-- Table for Players -->
+        <div class="table-container">
+            <table id="playerTable">
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Slot 1</th>
+                        <th>Slot 2</th>
+                        <th>Slot 3</th>
+                        <th>Rank</th>
+                    </tr>
+                </thead>
+                <tbody id="playerTableBody">
+                    <!-- Data will be populated here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Section for Player Details -->
+        <div class="player-info" id="playerInfo">
+            <h2>Player Information</h2>
+            <div class="player-photo">
+                <img id="playerImage" src="" alt="Player Photo" />
+            </div>
+            <div class="player-description">
+                <p id="playerDescription">Select a player to see their description and details.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="button-container">
+        <button id="1">Attack Selected Player</button>
+        <button id="2">Back</button>
+    </div>
+
+    <!-- External JS script -->
+    <script type="module" src="Players.js"></script>
+</body>
+
+</html>

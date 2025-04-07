@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medieval Drunk Knights Card Game</title>
+    <link rel="stylesheet" href="Attack.css">
+</head>
+<h1 id="title12">Battle!</h1>
+<body style="background-image: url('Images/AttackBG.png'); background-size: cover; background-repeat: repeat;">
+    <div class="game-container">
+        <!-- Opponent's Cards (Top) -->
+        <div class="cards-section opponent-cards">
+            <div class="cards-o">
+                <div class="card-slot" id="1"></div>
+                <div class="card-slot" id="2"></div>
+                <div class="card-slot" id="3"></div>
+            </div>
+        </div>
+
+        <!-- Turn Display -->
+        <h1 id="Display">You Attack First!</h1>
+
+        <!-- User's Cards (Bottom) -->
+        <div class="cards-section user-cards">
+            <div class="cards-my">
+                <div class="card-slot" id="4"></div>
+                <div class="card-slot" id="5"></div>
+                <div class="card-slot" id="6"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Attack.js"></script>
+    <script src="AttackLogic.js"></script>
+</body>
+</html>

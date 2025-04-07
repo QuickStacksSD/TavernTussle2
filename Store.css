@@ -1,0 +1,94 @@
+/* General Styling */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    color: #f0f0f0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+h1 {
+    color: #d4af37;
+    font-size: 3rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #d4af37;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+#storeCards,
+#buyCard {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid #d4af37;
+}
+
+.card {
+    width: 180px;
+    background-color: #222;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #d4af37;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background-color: #444;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+button#btnBuy,
+button#btnBack {
+    padding: 12px 30px;
+    /* Adjusted padding for better balance */
+    background-color: #d4af37;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    /* Increased font size for better readability */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px 0;
+    /* Increased margin for better spacing between buttons */
+    width: 200px;
+    /* Ensures buttons have the same width */
+    display: inline-block;
+}
+
+/* Styling for the buttons when hovered */
+button#btnBuy:hover,
+button#btnBack:hover {
+    background-color: #b8860b;
+    transform: scale(1.05);
+}
+
+/* Position Available Cards below the buttons */
+#storeCards {
+    margin-top: 30px;
+    /* Space between the buttons and available cards */
+}

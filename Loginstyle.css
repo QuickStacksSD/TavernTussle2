@@ -1,0 +1,108 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f0f0f0;
+    /* Light text color for contrast */
+}
+
+/* Container for background image */
+.background {
+    background: url('your-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Login box style */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.login-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Dark background with slight transparency */
+    padding: 40px;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border: 2px solid #d4af37;
+    /* Gold border for a regal look */
+}
+
+h1 {
+    font-size: 26px;
+    color: #d4af37;
+    /* Gold color for the header */
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.textbox {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.textbox input:focus {
+    border-color: #d4af37;
+    /* Gold focus color */
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+    /* Gold shadow on focus */
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #d4af37;
+    /* Gold button */
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.btn:hover {
+    background-color: #b38b2d;
+    /* Darker gold on hover */
+}
+
+.btn:active {
+    background-color: #9c7b26;
+    /* Darker gold when active */
+}

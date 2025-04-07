@@ -1,0 +1,322 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Modern, clean font */
+    background-color: #1a1a1a;
+    /* Dark background for a more dramatic look */
+    margin: 0;
+    padding: 0;
+    color: #f0f0f0;
+    /* Keep the light grey for readability */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #000;
+    /* Solid black background */
+    color: #f0f0f0;
+    /* Keep the light grey for readability */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #d4af37;
+    /* Gold accent */
+}
+
+header .logo h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px #000;
+    /* Medieval text shadow */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #f0f0f0;
+    /* Keep light grey for readability */
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #333, #555);
+    /* Dark gradient for background */
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background: linear-gradient(145deg, #d4af37, #f0f0f0);
+    /* Gold accent on hover */
+    color: #1a1a1a;
+    transform: scale(1.05);
+}
+
+header nav ul li a i {
+    font-size: 1.3rem;
+}
+
+/* Main Content Section */
+main.content {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #333;
+    /* Dark background for content */
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    border: 4px solid #d4af37;
+    /* Gold accent border */
+}
+
+.profile-section,
+.cards-section,
+.selected-cards-section {
+    margin-bottom: 40px;
+    color: white;
+    
+}
+
+h1,
+h2 {
+    color:white;
+    /* Gold color for headers */
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+/* Profile Section Styling */
+#profileUsername {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #d4af37;
+    /* Gold color for username */
+}
+
+#profileTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#profileTable th,
+#profileTable td {
+    padding: 12px;
+    text-align: left;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#profileTable tr:nth-child(even) {
+    background-color: #333;
+    /* Dark background for even rows */
+}
+
+button#logoutBtn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #d32f2f;
+    /* Red for logout button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button#logoutBtn:hover {
+    background-color: #c62828;
+    transform: scale(1.05);
+}
+
+/* Card List Container */
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* Individual Card Styling */
+.card {
+    width: 220px;
+    background-color: #333;
+    /* Dark card background */
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #d4af37;
+    /* Gold border */
+    transform: scale(1);
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: #d4af37;
+    /* Slightly lighter on hover */
+}
+
+.card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.card table td {
+    padding: 6px;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #f0f0f0;
+}
+
+.card table tr:nth-child(even) {
+    background-color: #444;
+    /* Slightly lighter for even rows */
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: white;
+    /* Gold color for card titles */
+    font-weight: 600;
+}
+
+/* Selected Cards Section */
+.selected-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+}
+
+.selected-card {
+    width: 240px;
+    min-height: 360px;
+    padding: 20px;
+    background-color: #d4af37;
+    /* Dark background for selected cards */
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    border: 2px solid #d4af37;
+    /* Gold border */
+}
+
+.selected-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: lightblue;
+}
+
+.selected-card img {
+    width: 85%;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto 15px;
+}
+
+.selected-card h3 {
+    font-size: 1.2rem;
+    color: #d4af37;
+    /* Gold color for selected card titles */
+    font-weight: bold;
+}
+
+.selected-card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.selected-card table td {
+    padding: 6px;
+    font-size: 0.9rem;
+    color: #f0f0f0;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 500px) {
+    body {
+        font-size: 14px;
+    }
+
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin-bottom: 12px;
+    }
+
+    .card-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .selected-cards {
+        flex-direction: column;
+        align-items: center;
+        background-color: #d4af37;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .selected-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
